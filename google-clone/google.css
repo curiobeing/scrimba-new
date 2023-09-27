@@ -1,0 +1,50 @@
+img {
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    /* text-align: center; */
+}
+
+input {
+    width: 400px;
+    /* use this instead of height */
+    line-height: 24px;
+    padding: 10px 30px;
+    border: 1px solid #cbcdd0;
+    border-radius: 24px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* we can also use text-align: center; */
+.btn-wrapper {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+}
+
+button {
+    background: #ecece9;
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:active {
+    scale: 0.98;
+}
+
+.home {
+    display: block;
+    width: 10px;
+    margin: auto;
+    margin-top: 200px;
+}

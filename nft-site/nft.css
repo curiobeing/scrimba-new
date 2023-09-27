@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #2b283a;
+}
+
+/* typography */
+
+h1,
+h3 {
+    margin: 0;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+h3 {
+    color: #d0aaff;
+}
+
+.main-p-title {
+    font-weight: bold;
+}
+
+/* links & buttons */
+a {
+    color: #ef5839;
+    text-decoration-style: dotted;
+}
+
+a:hover {
+    color: #d4b44c;
+}
+
+.btn {
+    padding: 10px 19px;
+    display: inline-block;
+    border-radius: 4.6px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #f3e885;
+    color: #2b283a;
+}
+
+.btn-buy {
+    background-color: #5f29a3;
+    color: whitesmoke;
+}
+
+.btn-info,
+.btn-contact {
+    background-color: #f0eeff;
+    color: #5f29a3;
+}
+
+.btn-about {
+    background-color: #fff;
+    color: #5f29a3;
+}
+
+
+/* layouts */
+
+.container {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+header,
+section {
+    background-color: #5f29a3;
+    color: whitesmoke;
+}
+
+header,
+main,
+section {
+    padding: 45px 10px;
+    ;
+}
+
+.main-img {
+    width: 100%;
+}
+
+.section-imgs {
+    display: flex;
+    gap: 10px;
+}
+
+.section-img {
+    width: 50%;
+    border-radius: 2px;
+}
+
+footer {
+    text-align: center;
+    padding: 45px 10px;
+    /* font-weight: bold; */
+    color: #5f29a3;
+}

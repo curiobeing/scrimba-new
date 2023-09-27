@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* this is for chrome store deployment */
+    /* max-width: 400px; */
+    min-width: 400px;
+}
+
+#input-el {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border: 1px solid #5f9341;
+}
+
+button {
+    border: none;
+    background: #5f9341;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #5f9341;
+}
+
+#delete-btn {
+    color: #5f9341;
+    background: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    scale: 0.98;
+}
+
+#ul-el {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+
+}
+
+li {
+    margin-top: 10px;
+    /* border-bottom: 1px solid rgb(231, 231, 231); */
+}
+
+a {
+    color: #5f9341;
+    font-size: 16px;
+}

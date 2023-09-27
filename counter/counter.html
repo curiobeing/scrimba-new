@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Counter</title>
+    <link rel="stylesheet" href="/counter/counter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="main">
+        <h2>Dogs Noticed🐶:</h2>
+        <h1 id="count-el">0</h1>
+        <div class="btn-wrapper">
+            <button id="increment-btn" onclick="increment()">INCREMENT</button>
+            <button id="save-btn" onclick="save()">SAVE</button>
+            <button id="reset-btn" onclick="reset()">RESET</button>
+        </div>
+        <p id="save-el">Previous Entries🐕‍🦺: </p>
+    </div>
+
+    <a href="/index.html">Home</a>
+
+    <script src="/counter/counter.js"></script>
+</body>
+
+</html>

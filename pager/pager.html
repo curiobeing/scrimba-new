@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Pager</title>
+    <link rel="stylesheet" href="/pager/pager.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="recepient-section">
+            <h3 class="pager-title">Pager</h3>
+            <p id="message-received"></p>
+        </div>
+
+        <div class="sender-section">
+            <h3>Phone</h3>
+            <p id="message-to-send"></p>
+            <div class="numbers">
+                <button class="number-btn" onclick="makeMessage('1')">1</button>
+                <button class="number-btn" onclick="makeMessage('2')">2</button>
+                <button class="number-btn" onclick="makeMessage('3')">3</button>
+                <button class="number-btn" onclick="makeMessage('4')">4</button>
+                <button class="number-btn" onclick="makeMessage('5')">5</button>
+                <button class="number-btn" onclick="makeMessage('6')">6</button>
+                <button class="number-btn" onclick="makeMessage('7')">7</button>
+                <button class="number-btn" onclick="makeMessage('8')">8</button>
+                <button class="number-btn" onclick="makeMessage('9')">9</button>
+                <button class="number-btn" onclick="makeMessage('*')">*</button>
+                <button class="number-btn" onclick="makeMessage('0')">0</button>
+                <button class="number-btn" onclick="makeMessage('#')">#</button>
+            </div>
+
+            <button id="send-btn" onclick="send()">SEND</button>
+            <!-- since we made btn width 100%, without break also, buttons would go to next line -->
+            <!-- <br> -->
+            <button id="reset-btn" onclick="reset()">RESET</button>
+
+        </div>
+
+    </div>
+
+    <a href="/index.html">Home</a>
+
+    <script src="/pager/pager.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+body {
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    /* text-align: center; */
+    user-select: none;
+    /* we set margin here also, as the margin is auto for main-div, for center alignment */
+    /* we set this so that when window width is reduced there is some gap between border and content */
+    margin: 30px;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: auto;
+    padding: 20px;
+    /* we set this so that clear list btn is towards bottom */
+    padding-bottom: 0px;
+    background: #fbeee8;
+    border-radius: 4px;
+}
+
+img {
+    width: 100px;
+    margin: auto;
+}
+
+.input-div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+input {
+    /* width: 70%; */
+    /* margin: 10px 5px 10px 0; */
+    margin-right: 5px;
+    padding: 14px;
+    border-radius: 4px;
+    border: none;
+    background-color: #dce1eb;
+    color: #d24a21;
+    font-family: inherit;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.clear-input-btn:active {
+    scale: 0.97;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    background: #f86e45;
+    color: whitesmoke;
+    font-weight: 600;
+    padding: 12px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    scale: 0.99;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* background-color: green; */
+}
+
+li {
+    flex-grow: 1;
+    /* we will set the bg, color, radius on item-div */
+    /* background: #ffded4; */
+    /* color: #d24a21; */
+    /* border-radius: 4px 0 0 4px; */
+    font-size: 14px;
+    /* we set flex here so that the item-message (wrapped with item-div that is block elemenet) and delete-btn appear in one line at opposite ends */
+    display: flex;
+    justify-content: space-between;
+    /* we set this so that word-wrap works. We've to set this for every child of flexbox */
+    min-width: 1%;
+}
+
+li:active {
+    scale: 0.98;
+}
+
+.item-div {
+    /* Parent for this div is li which has grow set, so that it takes all available space */
+    /* we set grow for this div so that item takes entire space inside the parent li after delete-btn is filled. Also, cursor pointer and clicking should work on all available space except delete-btn so that on single click the item is checked (line-through) */
+    /* we could have set this on item-span also */
+    flex-grow: 1;
+    /* we set this div as flex only to vertically align the text inside item-span. Else there is no use of this and we can shift styling into item-span */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: #ffded4;
+    border-radius: 4px 0 0 4px;
+    padding: 2px 2px 2px 8px;
+    /* we set this so that word-wrap works. We've to set this for every child of flexbox */
+    min-width: 1%;
+}
+
+.item-div:hover {
+    background: #f8d1c5;
+}
+
+.item-span {
+    /* we set these 2 properties to force long text into next line */
+    word-wrap: break-word;
+    min-width: 1%;
+    color: #d24a21;
+    font-size: 15px;
+}
+
+.delete-btn {
+    min-height: 34px;
+    line-height: 1px;
+    /* we set min-width instead of width as for long text items, button width is getting reduced*/
+    min-width: 28px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0 4px 4px 0;
+    font-size: 15px;
+    background-color: #f8d1c5;
+    color: #914d38;
+    /* padding: 0; */
+}
+
+.check {
+    text-decoration: line-through;
+}
+
+#clear-btn {
+    margin-top: 10px;
+    background: none;
+    color: #914d38;
+}

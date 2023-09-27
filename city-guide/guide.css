@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    background-image: url("/city-guide/hero.jpg");
+    background-size: cover;
+    height: 300px;
+    /* we use flex and others as we need color bg just around the text. By default it will stretch entire row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-title {
+    color: white;
+    background: #66402ed6;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.hero-text {
+    color: whitesmoke;
+    background: #53678bde;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.activities-section {
+    padding: 20px 10px;
+    background: rgba(0, 128, 128, 0.258);
+}
+
+.activities {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.activity {
+    /* why width? */
+    width: 250px;
+}
+
+.activity-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.guide {
+    display: flex;
+    margin: 50px auto;
+    background: rgb(164, 255, 225);
+    width: 450px;
+    padding: 20px;
+    border-radius: 6px;
+    border-bottom: 6px solid;
+    align-items: center;
+}
+
+.guide-img {
+    width: 200px;
+    height: 180px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+a {
+    display: block;
+    margin-bottom: 20px;
+}

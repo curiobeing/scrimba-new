@@ -1,0 +1,108 @@
+@font-face {
+    src: url("/pager/Public-Pixel.ttf");
+    font-family: 'pixel';
+}
+
+body {
+    background: #e9e3ff;
+    text-align: center;
+    font-family: 'pixel', sans-serif;
+    user-select: none;
+}
+
+.main {
+    background: white;
+    padding: 12px;
+    width: 200px;
+    margin: 50px auto;
+}
+
+.recepient-section {
+    background: #2a3035;
+    padding: 4px 8px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 12px;
+}
+
+.pager-title {
+    color: white;
+}
+
+/* message p */
+p {
+    padding: 8px 0;
+    font-size: 16px;
+    margin: 5px 0;
+    height: 24px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#message-received {
+    background: #9fc4b3;
+}
+
+.sender-section {
+    background: #d9d9d9;
+    padding: 5px;
+}
+
+#message-to-send {
+    background: #444444;
+    color: white;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    scale: .98;
+}
+
+.number-btn {
+    background: white;
+    border: none;
+    font-weight: bold;
+    padding: 4px;
+    font-size: 16px;
+}
+
+#send-btn,
+#reset-btn {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+#send-btn {
+    background: #3e9c7d;
+    margin-bottom: 5px;
+}
+
+#reset-btn {
+    background: #bf492a;
+    color: white;
+}
+
+a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #2a3035;
+}

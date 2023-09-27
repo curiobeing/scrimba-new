@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    color: #82a5ca;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.hero {
+    background-image: url("/space-ex/galaxy.webp");
+    background-size: cover;
+    padding: 20px 0 40px 0;
+}
+
+img {
+    width: 200px;
+}
+
+h1 {
+    text-shadow: 0 0 2px black;
+}
+
+button {
+    border: none;
+    padding: 8px 16px;
+    background: white;
+    font-family: inherit;
+    color: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:active {
+    scale: 0.98;
+}
+
+.home {
+    display: block;
+    width: 10px;
+    margin: auto;
+    margin-top: 200px;
+    font-weight: bold;
+}
