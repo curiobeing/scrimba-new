@@ -1,8 +1,13 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    background-color: aliceblue;
+    background-color: #d8d3ff;
     margin: 30px;
+    color: #2b283a;
+}
+
+h1 {
+    font-size: 28px;
 }
 
 .link-wrapper {
@@ -21,20 +26,22 @@ li {
 }
 
 a {
-    background-color: thistle;
+    background-color: #7730ce;
     padding: 6px 8px;
+    color: #f0eeff;
+
     /* ?we have this here to ensure gap vertical is applied */
     display: block;
     border-radius: 4px;
-    /* to remove the underline */
     text-decoration: none;
-    color: black;
+    font-size: 16px;
 }
 
 a:hover {
     box-shadow: 0 0 2px grey;
     /* background-color: rgb(201, 174, 201); */
     opacity: 0.95;
+    scale: 1.01;
 }
 
 a:active {
