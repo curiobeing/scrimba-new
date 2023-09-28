@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+/* typography */
+h1 {
+    margin-top: 0;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+span {
+    color: #99d930;
+    font-weight: 900;
+    display: block;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 42px;
+    margin-top: 0;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.small-text {
+    margin-top: 0;
+}
+
+.small-text span {
+    display: inline;
+}
+
+/* links & buttons */
+a {
+    color: #99d930;
+    font-weight: 900;
+}
+
+a:hover,
+a:active {
+    color: #fff;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #99d930;
+    color: #252525;
+    font-weight: 900;
+    padding: 10px 12px;
+    /* we set this so that margin can be applied */
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #252525;
+    color: #fff;
+}
+
+section .btn:hover,
+section .btn:active {
+    background-color: #fff;
+    color: #252525;
+}
+
+
+/* layouts */
+
+header,
+section {
+    background-color: #252525;
+    color: whitesmoke;
+}
+
+header,
+main,
+section {
+    padding: 100px 0;
+}
+
+.container {
+    /* we set max-width instead of width so that this works well on mobile */
+    max-width: 570px;
+    margin: auto;
+}
