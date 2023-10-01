@@ -19,11 +19,21 @@ const endorsementsInDB = ref(database, "endorsements");
 const fromEl = document.querySelector("#from-el");
 const toEl = document.getElementById("to-el");
 const inputEl = document.getElementById("input-el");
+const clearInputsBtn = document.querySelector("#clear-input-btn");
 const publishBtn = document.getElementById("publish-btn");
 const clearAllBtn = document.querySelector("#clear-all-btn");
 const messagesEl = document.querySelector("#messages-el");
 
 let likedEndorsements = [];
+
+// function to clear all the 3 input fields
+function clearInputs() {
+  fromEl.value = "";
+  toEl.value = "";
+  inputEl.value = "";
+}
+
+clearInputsBtn.addEventListener("click", () => clearInputs());
 
 publishBtn.addEventListener("click", function () {
   let currentItem = {
@@ -35,9 +45,7 @@ publishBtn.addEventListener("click", function () {
 
   push(endorsementsInDB, currentItem);
 
-  fromEl.value = "";
-  toEl.value = "";
-  inputEl.value = "";
+  clearInputs();
 });
 
 onValue(endorsementsInDB, function (snapshot) {

@@ -51,8 +51,14 @@ textarea {
     outline: none;
 }
 
+.btn-div {
+    display: flex;
+    gap: 5px;
+}
+
 button {
     cursor: pointer;
+    flex-grow: 1;
 }
 
 button {
@@ -63,12 +69,16 @@ button:active {
     scale: 0.99;
 }
 
-#publish-btn {
+.btn {
     border: none;
     background-color: #00acf8;
     font-weight: 600;
     border-radius: 8px;
     padding: 12px;
+}
+
+#clear-input-btn {
+    background-color: #abc8d4;
 }
 
 #clear-all-btn {

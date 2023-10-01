@@ -1,9 +1,12 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    background-color: #d8d3ff;
     margin: 30px;
+    background-color: #d8d3ff;
     color: #2b283a;
+    /* github style */
+    /* background-color: #0d1117; */
+    /* color: #e6edf3; */
 }
 
 h1 {
@@ -22,14 +25,18 @@ li {
     flex-grow: 1;
     /* padding: 6px 8px; */
     /* background: violet; */
-
 }
 
 a {
     background-color: #7730ce;
-    padding: 8px;
     color: #f0eeff;
 
+    /* github style */
+    /* background-color: #30363d;
+    color: #e6edf3; */
+
+
+    padding: 8px;
     /* ?we have this here to ensure gap vertical is applied */
     display: block;
     border-radius: 4px;
